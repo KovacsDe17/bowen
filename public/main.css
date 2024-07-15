@@ -1,0 +1,21 @@
+body {
+    background-color: #E6E5E5;
+}
+
+.quint {
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.primary-color {
+    color:#59B12C !important;
+}
+
+.secondary-color {
+    color:#C82826;
+}
+
+.card {
+    background-color: #ffffff;
+}
