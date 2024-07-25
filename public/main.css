@@ -16,6 +16,82 @@ body {
     color:#C82826;
 }
 
-.card {
+.header {
+    max-width: 100%;
+    border-radius: 0;
     background-color: #ffffff;
+}
+
+.footer {
+    max-width: 100%;
+    border-radius: 0;
+    background-color: #ffffff;
+}
+
+.hero {
+    color:#C82826;
+    background-color: #ffffff;
+}
+
+.hero h1 {
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#59B12C !important;
+}
+
+.hero .lead {
+    font-weight: 500;
+}
+
+.box-shadow {
+    box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .1), 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.btn {
+    background-color: #59B12C;
+    border-color: #59B12C;
+}
+
+.btn:disabled {
+    background-color: #59B12C;
+    border-color: #59B12C;
+}
+
+.btn:active{
+    background-color: #438722 !important;
+    border-color: #438722 !important;
+}
+
+.btn:hover{
+    background-color: #4d9b27;
+    border-color: #4d9b27;
+}
+
+.features {
+    background-color: #ffffff;
+    max-width: 100%;
+}
+
+.features h2 {
+    font-family: "Quintessential", serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #59B12C;
+}
+
+.features h3 {
+    font-family: "Quintessential", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #C82826 !important;
+}
+
+.icon-link {
+    color: #59B12C;
+    text-decoration: underline #59B12C;
+}
+
+.icon-link img {
+    color: #59B12C;
 }
