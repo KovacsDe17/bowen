@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
   </div>
 
   <main>  
-    <div class="px-4 py-5 my-5 text-center hero box-shadow">
+    <div class="px-4 py-5 my-5 text-center hero box-shadow" hidden>
       <img class="d-block mx-auto mb-4 img-fluid" src="https://picsum.photos/600/300.jpg" alt="" width="600" height="300">
       <h1 class="display-5 fw-bold text-body-emphasis">Ez egy cím</h1>
       <div class="col-lg-6 mx-auto">
@@ -33,7 +34,7 @@
       </div>
     </div>
 
-    <div class="px-4 py-5 my-5 text-center hero box-shadow">
+    <div class="px-4 py-5 my-5 text-center hero box-shadow" hidden>
       <img class="d-block mx-auto mb-4 img-fluid" src="https://picsum.photos/600/300.jpg" alt="" width="600" height="300">
       <h1 class="display-5 fw-bold text-body-emphasis">Egy másik cím</h1>
       <div class="col-lg-6 mx-auto">
@@ -44,7 +45,7 @@
       </div>
     </div>
 
-    <div class="px-4 py-5 my-5 text-center hero box-shadow">
+    <div class="px-4 py-5 my-5 text-center hero box-shadow" hidden>
       <img class="d-block mx-auto mb-4 img-fluid" src="https://picsum.photos/600/300.jpg" alt="" width="600" height="300">
       <h1 class="display-5 fw-bold text-body-emphasis">És egy harmadik</h1>
       <div class="col-lg-6 mx-auto">
@@ -55,30 +56,77 @@
       </div>
     </div>  
 
+    <div class="container px-4 py-3 my-5 features box-shadow" id="features_v1" hidden>
+      <h2 class="mx-0 mx-sm-5 pb-2 border-bottom neutral">Gyógyszer vagy ...</h2>
+      <div class="row mx-0 mx-sm-5 g-4 px-0 px-sm-3 py-2 row-cols-1 row-cols-md-3 row-cols-xxl-4 justify-content-center">
+        <div class="feature col">
+          <img class="feature-icon" src="public/images/icon_bowen_tr.png" alt="bowen logo" width="100px" height="100px"/>
+          <h3 class="fs-2 text-body-emphasis bowen">Bowen kezelés</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="icon-link bowen">
+            Részletek
+            <i class="bi bi-chevron-right bowen"></i>
+          </a>
+        </div>
+        <div class="feature col">
+          <img class="feature-icon" src="public/images/icon_headmassage_tr.png" alt="indian head massage logo" width="100px" height="100px"/>
+          <h3 class="fs-2 text-body-emphasis head-massage">Indiai fejmasszázs</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="icon-link head-massage">
+            Részletek
+            <i class="bi bi-chevron-right head-massage"></i>
+          </a>
+        </div>
+        <div class="feature col">
+          <img class="feature-icon" src="public/images/icon_metamorf_tr.png" alt="metamorf logo" width="100px" height="100px"/>
+          <h3 class="fs-2 text-body-emphasis metamorf">Metamorf érintés</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="icon-link metamorf">
+            Részletek
+            <i class="bi bi-chevron-right metamorf"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
-    <div class="container px-4 py-3 my-5 features box-shadow">
-      <h2 class="mx-5 pb-2 border-bottom">Kezelések</h2>
-      <div class="row mx-5 g-4 py-2 row-cols-1 row-cols-lg-3">
-        <div class="feature col-2">
-          <h3 class="fs-2 text-body-emphasis">Bowen kezelés</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a href="#" class="icon-link">
-            Megnézem...
-          </a>
+    <div class="container px-4 py-5 my-5 features box-shadow" id="features_v2">
+      <h2 class="mx-0 mx-sm-5 pb-2 border-bottom neutral">Gyógyszer vagy ...</h2>
+      <div class="row mx-0 mx-sm-5 g-4 px-0 px-sm-3 py-2 row-cols-1 row-cols-xl-3 row-cols-xxl-4 justify-content-center">
+        <div class="col d-flex align-items-start">
+          <img class="feature-icon" src="public/images/icon_bowen_tr.png" alt="bowen logo" width="100px" height="100px"/>
+          <div>
+            <h3 class="fs-2 text-body-emphasis bowen">Bowen kezelés</h3>
+            <p>Hát-, derék-, váll-, ízületi fájdalom, állkapocs probléma, emésztőrendszeri eltérések, neurológiai állapotok alternatív kezelésére.</p>
+            <!-- <p>A <b>bőr</b> stimulációjának szükséglete már a magzati időszakunktól a végső búcsúzásig jelen van. Az <b>érintés</b> közvetít, hatással van a lelki és a fizikai állapotunkra, kiemelkedő szerepe van az <b>öngyógyítási</b> funkciók során. Ezt a <b>hatást</b> szeretném alkalmazni kezeléseim során.</p> -->
+            <a href="#" class="icon-link bowen">
+              Részletek
+              <i class="bi bi-chevron-right bowen"></i>
+            </a>
+          </div>
         </div>
-        <div class="feature col-2">
-          <h3 class="fs-2 text-body-emphasis">Valami más</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a href="#" class="icon-link">
-            Megnézem...
-          </a>
+        <div class="col d-flex align-items-start">
+          <img class="feature-icon" src="public/images/icon_headmassage_tr.png" alt="indian head massage logo" width="100px" height="100px"/>
+          <div>
+            <h3 class="fs-2 text-body-emphasis head-massage">Indiai fejmasszázs</h3>
+            <p>Speciális lelki blokkoló technika, feloldja a lelki megakadást, szorongást, depressziót, gátakat, pánikbetegséget, az energaáramlást segíti.</p>
+            <!-- <p>Az indiai fejmasszázs az 5000 éves ájurvéda gyógyítási módszertanon alapszik. A legtöbbször a <b>csendet és nyugalmat</b> vonjuk meg magunktól, ezáltal állandó stressznek tesszük ki magunkat.</p> -->
+            <a href="#" class="icon-link head-massage">
+              Részletek
+              <i class="bi bi-chevron-right head-massage"></i>
+            </a>
+          </div>
         </div>
-        <div class="feature col-2">
-          <h3 class="fs-2 text-body-emphasis">És ez is más</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a href="#" class="icon-link">
-            Megnézem...
-          </a>
+        <div class="col d-flex align-items-start">
+          <img class="feature-icon" src="public/images/icon_metamorf_tr.png" alt="metamorf logo" width="100px" height="100px"/>
+          <div>
+            <h3 class="fs-2 text-body-emphasis metamorf">Metamorf érintés</h3>
+            <p>Nyugodtabb alvást, megnövekedett energiát és életerőt eredményezhet.</p>
+            <!-- <p>Ahhoz, hogy fenn tudd tartani a szervezeted <b>biológiai egyensúlyát</b>, fontos, hogy helyre állítsd <b>lelked harmóniáját</b> is, mert ez segíti a test sejtjeinek <b>öngyógyító folyamatait</b> a meridián rendszeren keresztül.</p> -->
+            <a href="#" class="icon-link metamorf">
+              Részletek
+              <i class="bi bi-chevron-right metamorf"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -89,12 +137,20 @@
       <div class="col-md-4 d-flex"></div>
   
       <div class="col-md-4 d-flex justify-content-center align-items-center">
-        <span class="mb-md-0 text-body-secondary">© 2024 Bowen Egyensúly</span>
+        <span class="mb-md-0 text-body-secondary">© <script>document.write(new Date().getFullYear())</script> Bowen Egyensúly</span>
       </div>
   
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><img class="bi" width="24" height="24" src="public/images/facebook.svg"/></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><img class="bi" width="24" height="24" src="public/images/instagram.svg"/></a></li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="#">
+            <i class="bi bi-facebook footer-icon"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="#">
+            <i class="bi bi-instagram footer-icon"></i>
+          </a>
+        </li>
       </ul>
     </footer>
   </div>

@@ -16,6 +16,42 @@ body {
     color:#C82826;
 }
 
+.neutral {
+    color: #004aad !important;
+}
+
+.bg-neutral {
+    background-color: #004aad !important;
+    color: #ffffff !important;
+}
+
+.bowen {
+    color: #59B12C !important;
+}
+
+.bg-bowen {
+    background-color: #59B12C !important;
+    color: #ffffff !important;
+}
+
+.head-massage {
+    color: #C82826 !important;
+}
+
+.bg-head-massage {
+    background-color: #C82826 !important;
+    color: #ffffff !important;
+}
+
+.metamorf {
+    color: #ffd500 !important;
+}
+
+.bg-metamorf {
+    background-color: #ffd500 !important;
+    color: #ffffff !important;
+}
+
 .header {
     max-width: 100%;
     border-radius: 0;
@@ -26,6 +62,10 @@ body {
     max-width: 100%;
     border-radius: 0;
     background-color: #ffffff;
+}
+
+.footer-icon {
+    font-size: x-large;
 }
 
 .hero {
@@ -77,21 +117,27 @@ body {
     font-family: "Quintessential", serif;
     font-weight: 800;
     font-style: normal;
-    color: #59B12C;
 }
 
 .features h3 {
     font-family: "Quintessential", serif;
     font-weight: 600;
     font-style: normal;
-    color: #C82826 !important;
+}
+
+.feature-icon {
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    /* box-shadow: 2px 2px 2px gray;
+    border-radius: 25%; */
 }
 
 .icon-link {
-    color: #59B12C;
-    text-decoration: underline #59B12C;
+    text-decoration: underline;
 }
 
-.icon-link img {
-    color: #59B12C;
+.icon-link i {
+    margin-bottom: 0.5rem;
 }
