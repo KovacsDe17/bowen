@@ -23,39 +23,6 @@
   </div>
 
   <main class="my-5">  
-    <div class="px-4 py-5 my-5 text-center hero box-shadow" hidden>
-      <img class="d-block mx-auto mb-4 img-fluid" src="https://picsum.photos/600/300.jpg" alt="" width="600" height="300">
-      <h1 class="display-5 fw-bold text-body-emphasis">Ez egy cím</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Ez egy hosszabb leírás szeretne lenni, de még nem teljesen az, ami mindent leír.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Miről van szó</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="px-4 py-5 my-5 text-center hero box-shadow" hidden>
-      <img class="d-block mx-auto mb-4 img-fluid" src="https://picsum.photos/600/300.jpg" alt="" width="600" height="300">
-      <h1 class="display-5 fw-bold text-body-emphasis">Egy másik cím</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Ez egy hosszabb leírás szeretne lenni, de még nem teljesen az, ami mindent leír.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Miről van szó</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="px-4 py-5 my-5 text-center hero box-shadow" hidden>
-      <img class="d-block mx-auto mb-4 img-fluid" src="https://picsum.photos/600/300.jpg" alt="" width="600" height="300">
-      <h1 class="display-5 fw-bold text-body-emphasis">És egy harmadik</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Ez egy hosszabb leírás szeretne lenni, de még nem teljesen az, ami mindent leír.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Miről van szó</button>
-        </div>
-      </div>
-    </div>  
-
     <div class="container my-5 container-wide box-shadow" id="intro">
       <div class="row flex-md-row-reverse justify-content-center align-items-center py-4 px-5">
         <div class="col-12 col-md-4 col-xxl-2">
@@ -149,6 +116,38 @@
             </a>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="container px-4 py-5 container-wide" id="send_email">
+      <div class="row align-items-center g-lg-5 px-3">
+        <div class="col-0 col-lg-1"></div>
+        <div class="col-lg-4 col-xl-5 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 quint bowen">Keress bizalommal!</h1>
+          <p class="col-lg-10 fs-4">Amennyiben szeretnél részletes tájékoztatót kapni vagy időpontot egyeztetnél, kérlek, hogy vedd fel velem a kapcsolatot e-mailben vagy telefonon!</p>
+        </div>
+        <div class="col-md-10 mx-md-auto mx-0 col-lg-6 col-xl-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="#">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="name" name="name" placeholder="Add meg a neved" required="">
+              <label for="name">Név</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input class="form-control" type="email" id="email" name="email" placeholder="valaki@valami.hu" required="">  
+              <label for="email">E-mail cím</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="subject" name="subject" placeholder="Tárgy" required="">
+              <label for="subject">Tárgy</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="body" name="body" rows="4" style="height: 100%;" placeholder="Üzenet" required=""></textarea>
+              <label for="body">Üzenet</label>
+            </div>
+            <button class="w-100 btn btn-primary quint" type="submit">Küldés</button>
+          </form>
+        </div>
+        <div class="col-0 col-lg-1"></div>
       </div>
     </div>
   </main>
