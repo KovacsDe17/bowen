@@ -13,16 +13,16 @@
     <link rel="icon" type="image/png" href="public/images/favicon.png">
 </head>
 <body>
-  <div class="container mx-0 card header box-shadow">
+  <div class="container mx-0 mb-5 card header box-shadow">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <img class="me-2" src="public/images/logo_circle.png" width="64" height="64"/>
-        <span class="fs-1 quint primary-color">Bowen Egyensúly</span>
+        <span class="fs-1 quint bowen" style="font-weight: 600;">Bowen Egyensúly</span>
       </a>
     </header>
   </div>
 
-  <main>  
+  <main class="my-5">  
     <div class="px-4 py-5 my-5 text-center hero box-shadow" hidden>
       <img class="d-block mx-auto mb-4 img-fluid" src="https://picsum.photos/600/300.jpg" alt="" width="600" height="300">
       <h1 class="display-5 fw-bold text-body-emphasis">Ez egy cím</h1>
@@ -55,6 +55,27 @@
         </div>
       </div>
     </div>  
+
+    <div class="container my-5 container-wide box-shadow" id="intro">
+      <div class="row flex-md-row-reverse justify-content-center align-items-center py-4 px-5">
+        <div class="col-12 col-md-4 col-xxl-2">
+          <img src="https://picsum.photos/300/500.jpg" class="d-block mx-auto img-fluid" alt="Bootstrap Themes" width="200" height="300" loading="lazy">
+        </div>
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold text-body-emphasis lh-1 mt-4 mt-md-0 mb-1 quint bowen">Bemutatkozás</h1>
+          <h1 class="display-6 fw-bold text-body-emphasis mb-2 quint bowen">Kojnok Tünde</h1>
+          <p class="">32 éves egészségügyi és oktatói tapasztalattal keresem azokat a módszereket, melyek a szervezet <b>öngyógyító</b> folyamataival tudják részben vagy egészben segíteni, kiváltani az egészségügyi kezeléseket.</p>
+          <p class="">Nagyon ki vagyunk téve a <b>testi és lelki</b> ártalmaknak és a legnagyobb igyekezetünkkel sem biztos hogy kordában tudjuk tartani a megváltozott állapot okozta tüneteket.</p>
+          <p class="">Segíteni szeretnék azoknak akik az <b>alternatív</b> kezelés - általam javasolt - formáit kipróbálnák, alkalmaznák <b>átmeneti vagy tartós</b> időszakra.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="#" class="icon-link bowen">
+              Részletek
+              <i class="bi bi-chevron-right bowen"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container px-4 py-3 my-5 features box-shadow" id="features_v1" hidden>
       <h2 class="mx-0 mx-sm-5 pb-2 border-bottom neutral">Gyógyszer vagy ...</h2>
@@ -89,7 +110,7 @@
       </div>
     </div>
 
-    <div class="container px-4 py-5 my-5 features box-shadow" id="features_v2">
+    <div class="container px-4 py-5 my-5 features container-wide box-shadow" id="features_v2">
       <h2 class="mx-0 mx-sm-5 pb-2 border-bottom neutral">Gyógyszer vagy ...</h2>
       <div class="row mx-0 mx-sm-5 g-4 px-0 px-sm-3 py-2 row-cols-1 row-cols-xl-3 row-cols-xxl-4 justify-content-center">
         <div class="col d-flex align-items-start">
@@ -142,11 +163,11 @@
   
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
         <li class="ms-3">
-          <a class="text-body-secondary" href="#">
+          <a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=100086488571841">
             <i class="bi bi-facebook footer-icon"></i>
           </a>
         </li>
-        <li class="ms-3">
+        <li class="ms-3" hidden>
           <a class="text-body-secondary" href="#">
             <i class="bi bi-instagram footer-icon"></i>
           </a>
