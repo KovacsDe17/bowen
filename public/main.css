@@ -56,16 +56,31 @@ body {
     max-width: 100%;
     border-radius: 0;
     background-color: #ffffff;
+    z-index: 20;
+    /* position: fixed; */
 }
 
 .footer {
     max-width: 100%;
     border-radius: 0;
     background-color: #ffffff;
+    position: relative;
+    z-index: 10;
 }
 
 .footer-icon {
     font-size: x-large;
+}
+
+.main {
+    z-index: 5;
+    position: relative;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    z-index: 5;
+    box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .1), 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
 .hero {
@@ -111,6 +126,7 @@ body {
 .container-wide {
     background-color: #ffffff;
     max-width: 100%;
+    z-index: 5;
 }
 
 .features h2 {
@@ -140,4 +156,25 @@ body {
 
 .icon-link i {
     margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    color: #59B12C !important;
+    font-size: 1.2rem;
+    padding: 0.25rem 1rem;
+}
+
+.nav-link:hover {
+    background-color: #59B12C !important;
+    color: #ffffff !important;
+}
+
+.nav hr {
+    margin: 0.25rem 0;
+}
+
+.menu-button, .menu-button:active, .menu-button:hover {
+    border-color: #59B12C;
+    background-color: #ffffff;
+    color: #59B12C;
 }
