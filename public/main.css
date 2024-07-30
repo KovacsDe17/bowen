@@ -160,7 +160,7 @@ body {
 
 .nav-link {
     color: #59B12C !important;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.25rem 1rem;
 }
 
@@ -177,4 +177,16 @@ body {
     border-color: #59B12C;
     background-color: #ffffff;
     color: #59B12C;
+}
+
+#header {
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+}
+
+#sidebar>ul {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 7.2rem;
 }
