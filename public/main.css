@@ -190,3 +190,25 @@ body {
     position: -webkit-sticky;
     top: 7.2rem;
 }
+
+.round-img {
+    border-radius: 50%;
+}
+
+.border-bowen {
+    border-color: #59B12C;
+}
+
+.border-head-massage {
+    border-color: #C82826;
+}
+
+.border-metamorf {
+    border-color: #ffd500;
+}
+
+.hr-bowen {
+    color: #59B12C;
+    opacity: .75;
+    size: 0.5px;
+}
