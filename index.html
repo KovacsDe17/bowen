@@ -143,7 +143,12 @@
             <p class="col-lg-10 fs-5">Amennyiben szeretnél részletes tájékoztatót kapni vagy időpontot egyeztetnél, vedd fel velem a kapcsolatot e-mailben vagy telefonon!</p>
           </div>
           <div class="col-md-10 mx-md-auto mx-0 col-lg-6 col-xl-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="#">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="https://formsubmit.co/d0aaf7b89afaa3cd3305e713ce114bf0" method="post">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_replyto" value="true">
+              <input type="hidden" name="_next" value="https://bowenegyensuly.hu/email-kuldve.html"> 
+              <input type="hidden" name="_template" value="box">
+              
               <div class="form-floating mb-3">
                 <input class="form-control" type="text" id="name" name="name" placeholder="Add meg a neved" required="">
                 <label for="name">Név</label>
@@ -153,11 +158,11 @@
                 <label for="email">E-mail cím</label>
               </div>
               <div class="form-floating mb-3">
-                <input class="form-control" type="text" id="subject" name="subject" placeholder="Tárgy" required="">
+                <input class="form-control" type="text" id="subject" name="_subject" placeholder="Tárgy" required="">
                 <label for="subject">Tárgy</label>
               </div>
               <div class="form-floating mb-3">
-                <textarea class="form-control" id="body" name="body" rows="4" style="height: 100%;" placeholder="Üzenet" required=""></textarea>
+                <textarea class="form-control" id="message" name="message" rows="4" style="height: 100%;" placeholder="Üzenet" required=""></textarea>
                 <label for="body">Üzenet</label>
               </div>
               <button class="w-100 btn btn-primary quint" type="submit">Küldés</button>

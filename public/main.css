@@ -258,3 +258,8 @@ body {
 .card > a {
     text-decoration: none;
 }
+
+.thanks {
+    height: calc(100vh - 12rem);
+    z-index: 0;
+}
