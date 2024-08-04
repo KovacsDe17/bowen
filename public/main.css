@@ -1,5 +1,7 @@
-body {
+html, body {
     background-color: #E6E5E5;
+    height: 100%;
+    margin: 0;
 }
 
 .quint {
@@ -95,7 +97,7 @@ body {
     border-radius: 0;
     background-color: #ffffff;
     position: relative;
-    z-index: 10;
+    z-index: 10000;
 }
 
 .footer-icon {
@@ -105,6 +107,7 @@ body {
 .main {
     z-index: 5;
     position: relative;
+    min-height: calc(100% - 7.2rem);
 }
 
 .sidebar {
@@ -260,6 +263,39 @@ body {
 }
 
 .thanks {
-    height: calc(100vh - 12rem);
     z-index: 0;
+}
+
+.contact-icon {
+    color: #59B12C;
+    padding: 10px;
+}
+
+.phone::before {
+    content: "+36-30-";
+}
+
+.phone, .email, .address {
+    text-decoration: none;
+    color: black;
+}
+
+.phone::after {
+    content: "-7330";
+}
+
+.email::before {
+    content: "bowenegyensuly";
+}
+
+.email::after {
+    content: "gmail.com";
+}
+
+.address::before {
+    content: "6758 Röszke, ";
+}
+
+.address::after {
+    content: " 109.";
 }
