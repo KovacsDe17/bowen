@@ -34,6 +34,10 @@ body {
     color: #ffffff !important;
 }
 
+.border-bowen {
+    border-color: #59B12C;
+}
+
 .head-massage {
     color: #C82826 !important;
 }
@@ -43,6 +47,19 @@ body {
     color: #ffffff !important;
 }
 
+.bg-head-massage-bowen {
+    background: linear-gradient(105deg, #C82826 0%, #C82826 50%, #59B12C 50%, #59B12C 100%) !important;
+    color: #ffffff;
+}
+
+.border-head-massage {
+    border-color: #C82826;
+}
+
+.border-head-massage-bowen {
+    border: linear-gradient(105deg, #C82826 0%, #C82826 50%, #59B12C 50%, #59B12C 100%) !important;
+}
+
 .metamorf {
     color: #ffd500 !important;
 }
@@ -50,6 +67,19 @@ body {
 .bg-metamorf {
     background-color: #ffd500 !important;
     color: #ffffff !important;
+}
+
+.bg-metamorf-bowen {
+    background: linear-gradient(105deg, #ffd500 0%, #ffd500 50%, #59B12C 50%, #59B12C 100%) !important;
+    color: #ffffff;
+}
+
+.border-metamorf {
+    border-color: #ffd500;
+}
+
+.border-metamorf-bowen {
+    border: linear-gradient(105deg, #ffd500 0%, #ffd500 50%, #59B12C 50%, #59B12C 100%) !important;
 }
 
 .header {
@@ -195,19 +225,36 @@ body {
     border-radius: 50%;
 }
 
-.border-bowen {
-    border-color: #59B12C;
-}
-
-.border-head-massage {
-    border-color: #C82826;
-}
-
-.border-metamorf {
-    border-color: #ffd500;
-}
-
 .hr {
     opacity: .75;
     size: 0.5px;
+}
+
+.card.fit-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body > .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-body .border-bowen, .card-body .border-head-massage, .card-body .border-metamorf {
+    opacity: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card > a {
+    text-decoration: none;
 }
