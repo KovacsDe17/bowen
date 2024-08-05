@@ -309,3 +309,7 @@ html, body {
 .address::after {
     content: " 109.";
 }
+
+.notice {
+    font-size: 0.75rem;
+}
