@@ -1,5 +1,18 @@
+:root {
+    --color-bowen: #59B12C;
+    --color-bowen-active: #438722;
+    --color-bowen-hover: #4d9b27;
+    --color-head-massage: #C82826;
+    --color-metamorf: #ffd500;
+    --color-metamorf-v2: #f5ba36;
+    --color-metamorf-v3: #f3b52d;
+    --color-neutral: #004aad;
+    --color-bg: #E6E5E5;
+    --color-card: #ffffff;
+}
+
 html, body {
-    background-color: #E6E5E5;
+    background-color: var(--color-bg);
     height: 100%;
     margin: 0;
 }
@@ -11,91 +24,90 @@ html, body {
   }
 
 .primary-color {
-    color:#59B12C !important;
+    color:var(--color-bowen) !important;
 }
 
 .secondary-color {
-    color:#C82826;
+    color:var(--color-head-massage);
 }
 
 .neutral {
-    color: #004aad !important;
+    color: var(--color-neutral) !important;
 }
 
 .bg-neutral {
-    background-color: #004aad !important;
-    color: #ffffff !important;
+    background-color: var(--color-neutral) !important;
+    color: var(--color-card) !important;
 }
 
 .bowen {
-    color: #59B12C !important;
+    color: var(--color-bowen) !important;
 }
 
 .bg-bowen {
-    background-color: #59B12C !important;
-    color: #ffffff !important;
+    background-color: var(--color-bowen) !important;
+    color: var(--color-card) !important;
 }
 
 .border-bowen {
-    border-color: #59B12C;
+    border-color: var(--color-bowen);
 }
 
 .head-massage {
-    color: #C82826 !important;
+    color: var(--color-head-massage) !important;
 }
 
 .bg-head-massage {
-    background-color: #C82826 !important;
-    color: #ffffff !important;
+    background-color: var(--color-head-massage) !important;
+    color: var(--color-card) !important;
 }
 
 .bg-head-massage-bowen {
-    background: linear-gradient(105deg, #C82826 0%, #C82826 50%, #59B12C 50%, #59B12C 100%) !important;
-    color: #ffffff;
+    background: linear-gradient(105deg, var(--color-head-massage) 0%, var(--color-head-massage) 50%, var(--color-bowen) 50%, var(--color-bowen) 100%) !important;
+    color: var(--color-card);
 }
 
 .border-head-massage {
-    border-color: #C82826;
+    border-color: var(--color-head-massage);
 }
 
 .border-head-massage-bowen {
-    border: linear-gradient(105deg, #C82826 0%, #C82826 50%, #59B12C 50%, #59B12C 100%) !important;
+    border: linear-gradient(105deg, var(--color-head-massage) 0%, var(--color-head-massage) 50%, var(--color-bowen) 50%, var(--color-bowen) 100%) !important;
 }
 
 .metamorf {
-    color: #ffd500 !important;
+    color: var(--color-metamorf) !important;
 }
 
 .bg-metamorf {
-    background-color: #ffd500 !important;
-    color: #ffffff !important;
+    background-color: var(--color-metamorf) !important;
+    color: var(--color-card) !important;
 }
 
 .bg-metamorf-bowen {
-    background: linear-gradient(105deg, #ffd500 0%, #ffd500 50%, #59B12C 50%, #59B12C 100%) !important;
-    color: #ffffff;
+    background: linear-gradient(105deg, var(--color-metamorf) 0%, var(--color-metamorf) 50%, var(--color-bowen) 50%, var(--color-bowen) 100%) !important;
+    color: var(--color-card);
 }
 
 .border-metamorf {
-    border-color: #ffd500;
+    border-color: var(--color-metamorf);
 }
 
 .border-metamorf-bowen {
-    border: linear-gradient(105deg, #ffd500 0%, #ffd500 50%, #59B12C 50%, #59B12C 100%) !important;
+    border: linear-gradient(105deg, var(--color-metamorf) 0%, var(--color-metamorf) 50%, var(--color-bowen) 50%, var(--color-bowen) 100%) !important;
 }
 
 .header {
     max-width: 100%;
     border-radius: 0;
-    background-color: #ffffff;
+    background-color: var(--color-card);
     z-index: 20;
-    /* position: fixed; */
 }
 
 .footer {
     max-width: 100%;
     border-radius: 0;
-    background-color: #ffffff;
+    background-color: var(--color-card);
     position: relative;
     z-index: 10000;
 }
@@ -111,21 +123,21 @@ html, body {
 }
 
 .sidebar {
-    background-color: #ffffff;
+    background-color: var(--color-card);
     z-index: 5;
     box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .1), 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
 .hero {
-    color:#C82826;
-    background-color: #ffffff;
+    color:var(--color-head-massage);
+    background-color: var(--color-card);
 }
 
 .hero h1 {
     font-family: "Quintessential", serif;
     font-weight: 400;
     font-style: normal;
-    color:#59B12C !important;
+    color:var(--color-bowen) !important;
 }
 
 .hero .lead {
@@ -137,27 +149,27 @@ html, body {
 }
 
 .btn {
-    background-color: #59B12C;
-    border-color: #59B12C;
+    background-color: var(--color-bowen);
+    border-color: var(--color-bowen);
 }
 
 .btn:disabled {
-    background-color: #59B12C;
-    border-color: #59B12C;
+    background-color: var(--color-bowen);
+    border-color: var(--color-bowen);
 }
 
 .btn:active{
-    background-color: #438722 !important;
-    border-color: #438722 !important;
+    background-color: var(--color-bowen-active) !important;
+    border-color: var(--color-bowen-active) !important;
 }
 
 .btn:hover{
-    background-color: #4d9b27;
-    border-color: #4d9b27;
+    background-color: var(--color-bowen-hover);
+    border-color: var(--color-bowen-hover);
 }
 
 .container-wide {
-    background-color: #ffffff;
+    background-color: var(--color-card);
     max-width: 100%;
     z-index: 5;
 }
@@ -179,8 +191,6 @@ html, body {
     width: 100px;
     height: 100px;
     padding: 5px;
-    /* box-shadow: 2px 2px 2px gray;
-    border-radius: 25%; */
 }
 
 .icon-link {
@@ -192,14 +202,14 @@ html, body {
 }
 
 .nav-link {
-    color: #59B12C !important;
+    color: var(--color-bowen) !important;
     font-size: 1rem;
     padding: 0.25rem 1rem;
 }
 
 .nav-link:hover {
-    background-color: #59B12C !important;
-    color: #ffffff !important;
+    background-color: var(--color-bowen) !important;
+    color: var(--color-card) !important;
 }
 
 .nav hr {
@@ -207,9 +217,9 @@ html, body {
 }
 
 .menu-button, .menu-button:active, .menu-button:hover {
-    border-color: #59B12C;
-    background-color: #ffffff;
-    color: #59B12C;
+    border-color: var(--color-bowen);
+    background-color: var(--color-card);
+    color: var(--color-bowen);
 }
 
 #header {
@@ -267,7 +277,7 @@ html, body {
 }
 
 .contact-icon {
-    color: #59B12C;
+    color: var(--color-bowen);
     padding: 10px;
 }
 
