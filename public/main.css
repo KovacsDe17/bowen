@@ -9,6 +9,8 @@
     --color-neutral: #004aad;
     --color-bg: #E6E5E5;
     --color-card: #ffffff;
+
+    --header-height: 7.2rem;
 }
 
 html, body {
@@ -97,14 +99,7 @@ html, body {
     border: linear-gradient(105deg, var(--color-metamorf) 0%, var(--color-metamorf) 50%, var(--color-bowen) 50%, var(--color-bowen) 100%) !important;
 }
 
-.header {
-    max-width: 100%;
-    border-radius: 0;
-    background-color: var(--color-card);
-    z-index: 20;
-}
-
-.footer {
+#footer {
     max-width: 100%;
     border-radius: 0;
     background-color: var(--color-card);
@@ -117,15 +112,33 @@ html, body {
 }
 
 .main {
+    margin-top: calc(var(--header-height) - 1rem);
     z-index: 5;
     position: relative;
-    min-height: calc(100% - 7.2rem);
+    min-height: calc(100% - var(--header-height));
 }
 
-.sidebar {
+#header {
+    max-width: 100%;
+    border-radius: 0;
+    background-color: var(--color-card);
+    z-index: 20;
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+}
+
+#sidebar {
     background-color: var(--color-card);
     z-index: 5;
     box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .1), 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+#sidebar>ul {
+    position: sticky;
+    position: -webkit-sticky;
+    top: var(--header-height);
 }
 
 .hero {
@@ -220,18 +233,6 @@ html, body {
     border-color: var(--color-bowen);
     background-color: var(--color-card);
     color: var(--color-bowen);
-}
-
-#header {
-    position: sticky;
-    position: -webkit-sticky;
-    top:0;
-}
-
-#sidebar>ul {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 7.2rem;
 }
 
 .round-img {
