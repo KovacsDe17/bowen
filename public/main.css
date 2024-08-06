@@ -314,3 +314,14 @@ html, body {
 .notice {
     font-size: 0.75rem;
 }
+
+.no-scroll-main {
+    position: fixed;
+    width: 100%;
+}
+
+.fixed-footer {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+}
