@@ -13,6 +13,12 @@
     <link rel="icon" type="image/png" href="public/images/favicon.png">
 </head>
 <body>
+  <script>
+    function disableSendButton(){
+      document.getElementById("button").disabled = true;
+      document.getElementById("spinner").hidden = false;
+    }
+  </script>
   <div class="container mx-0 card header box-shadow" id="header">
     <header class="d-flex flex-wrap justify-content-center py-1 mb-3 mb-md-4 border-bottom">
       <a href="./index.html" class="d-flex align-items-center mb-0 me-auto me-md-0 link-body-emphasis text-decoration-none">
@@ -167,7 +173,10 @@
                 <textarea class="form-control" id="message" name="message" rows="4" style="height: 100%;" placeholder="Üzenet" required=""></textarea>
                 <label for="body">Üzenet</label>
               </div>
-              <button class="w-100 btn btn-primary quint" type="submit">Küldés</button>
+              <button class="w-100 btn btn-primary quint" type="submit" id="button" onclick="disableSendButton()">
+                <span class="spinner-border spinner-border-sm" aria-hidden="true" id="spinner" hidden></span>
+                Küldés
+              </button>
             </form>
           </div>
           <div class="col-0 col-lg-1"></div>
