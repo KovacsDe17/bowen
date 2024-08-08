@@ -64,17 +64,8 @@ html, body {
     color: var(--color-card) !important;
 }
 
-.bg-head-massage-bowen {
-    background: linear-gradient(105deg, var(--color-head-massage) 0%, var(--color-head-massage) 50%, var(--color-bowen) 50%, var(--color-bowen) 100%) !important;
-    color: var(--color-card);
-}
-
 .border-head-massage {
     border-color: var(--color-head-massage);
-}
-
-.border-head-massage-bowen {
-    border: linear-gradient(105deg, var(--color-head-massage) 0%, var(--color-head-massage) 50%, var(--color-bowen) 50%, var(--color-bowen) 100%) !important;
 }
 
 .metamorf {
@@ -86,17 +77,8 @@ html, body {
     color: var(--color-card) !important;
 }
 
-.bg-metamorf-bowen {
-    background: linear-gradient(105deg, var(--color-metamorf) 0%, var(--color-metamorf) 50%, var(--color-bowen) 50%, var(--color-bowen) 100%) !important;
-    color: var(--color-card);
-}
-
 .border-metamorf {
     border-color: var(--color-metamorf);
-}
-
-.border-metamorf-bowen {
-    border: linear-gradient(105deg, var(--color-metamorf) 0%, var(--color-metamorf) 50%, var(--color-bowen) 50%, var(--color-bowen) 100%) !important;
 }
 
 #footer {
@@ -324,4 +306,33 @@ html, body {
     position: fixed !important;
     bottom: 0 !important;
     left: 0 !important;
+}
+
+.card-body {
+    padding: 0.5rem;
+}
+
+.pricing-card-prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 4rem;
+}
+
+.pricing-card-details {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 3rem;
+}
+
+.pricing-card-title {
+    font-size: 1.5rem !important;
+}
+
+h2.pricing-card-title {
+    font-size: 1.3rem !important;
+    font-weight: lighter !important;
 }
