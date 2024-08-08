@@ -17,6 +17,7 @@
     function disableSendButton(){
       document.getElementById("button").disabled = true;
       document.getElementById("spinner").hidden = false;
+      document.getElementById("form").submit();
     }
   </script>
   <div class="container mx-0 card header box-shadow" id="header">
@@ -143,7 +144,7 @@
             </a>
           </div>
           <div class="col-md-10 mx-md-auto mx-0 col-lg-6 col-xl-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="https://formsubmit.co/d0aaf7b89afaa3cd3305e713ce114bf0" method="post">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="https://formsubmit.co/d0aaf7b89afaa3cd3305e713ce114bf0" method="post" id="form">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_replyto" value="true">
               <input type="hidden" name="_next" value="https://kovacsde17.github.io/bowen/email-kuldve.html">
