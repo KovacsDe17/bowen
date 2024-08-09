@@ -81,6 +81,12 @@ html, body {
     border-color: var(--color-metamorf);
 }
 
+a {
+    font-weight: 500;
+    text-underline-offset: 0.15rem;
+    text-decoration-thickness: 0.05rem;
+}
+
 #footer {
     max-width: 100%;
     border-radius: 0;
@@ -275,8 +281,7 @@ html, body {
 }
 
 .phone, .email, .address {
-    text-decoration: none;
-    color: black;
+    color: var(--color-neutral);
 }
 
 .phone::after {
@@ -341,4 +346,8 @@ html, body {
 h2.pricing-card-title {
     font-size: 1.3rem !important;
     font-weight: lighter !important;
+}
+
+.social-media {
+    color: var(--color-neutral);
 }
