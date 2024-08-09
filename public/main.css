@@ -323,20 +323,24 @@ a {
     padding: 0.5rem;
 }
 
+.card-header h4{
+    font-size: 1.25rem !important;
+}
+
 .pricing-card-prices {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     flex-direction: column;
-    height: 4rem;
+    height: 4.5rem;
 }
 
 .pricing-card-details {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    height: 3rem;
+    min-height: 3.5rem;
 }
 
 .pricing-card-title {
