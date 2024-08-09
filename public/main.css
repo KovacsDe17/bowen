@@ -89,6 +89,12 @@ html, body {
     z-index: 10000;
 }
 
+.footer-icon-holder {
+    text-decoration: none;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
 .footer-icon {
     font-size: x-large;
 }
