@@ -144,7 +144,7 @@
             </a>
           </div>
           <div class="col-md-10 mx-md-auto mx-0 col-lg-6 col-xl-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="https://formsubmit.co/d0aaf7b89afaa3cd3305e713ce114bf0" method="post" id="form">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="https://formsubmit.co/d0aaf7b89afaa3cd3305e713ce114bf0" method="post" id="form" onsubmit="disableSendButton()">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_replyto" value="true">
               <input type="hidden" name="_next" value="https://kovacsde17.github.io/bowen/email-kuldve.html">
@@ -166,7 +166,7 @@
                 <textarea class="form-control" id="message" name="message" rows="4" style="height: 100%;" placeholder="Üzenet" required=""></textarea>
                 <label for="body">Üzenet</label>
               </div>
-              <button class="w-100 btn btn-primary quint" type="submit" id="button" onclick="disableSendButton()">
+              <button class="w-100 btn btn-primary quint" type="submit" id="button">
                 <span class="spinner-border spinner-border-sm" aria-hidden="true" id="spinner" hidden></span>
                 Küldés
               </button>
