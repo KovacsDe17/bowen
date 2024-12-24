@@ -86,18 +86,30 @@
         </div>
       </div>
 
-      <div class="container px-4 py-5 my-4 features container-wide box-shadow" id="features">
+      <div class="container px-4 pt-5 pb-xxl-5 my-4 features container-wide box-shadow" id="features">
         <div class="row" >
-          <div class="col-0 col-xxl-1"></div>
+          <div class="col-0"></div>
           <div class="col">
             <h1 class="mx-0 mx-md-5 pb-2 border-bottom palegreen">Gyógyszer vagy ...</h2>
           </div>
           <div class="col-1"></div>
           
         </div>
-        <div class="row mx-0 mx-sm-5 g-4 px-0 px-sm-3 py-2 row-cols-1 row-cols-xl-3 justify-content-center">
+          
+        <div class="row mx-0 mx-sm-5 g-4 px-0 px-sm-3 py-2 row-cols-1 row-cols-md-2 row-cols-xxl-5 justify-content-center d-none d-xxl-flex">
+          
           <div class="col d-flex align-items-start">
-            <img class="feature-icon" src="public/images/icon_bowen_tr.png" alt="bowen logo" width="100px" height="100px"/>
+            <div>
+              <h3 class="fs-2 text-body-emphasis chrono">Kronobiológia</h3>
+              <p>Lehetőség nyílik az egyéni képességek fejlesztésére, a kapcsolatok harmonizálására és a tudatosabb életvitel kialakítására.</p>
+              <a href="./kronobiologia.html" class="icon-link chrono">
+                Részletek
+                <i class="bi bi-chevron-right chrono"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start">
             <div>
               <h3 class="fs-2 text-body-emphasis bowen">Bowen kezelés</h3>
               <p>Hát-, derék-, váll-, ízületi fájdalom, állkapocs probléma, emésztőrendszeri eltérések, neurológiai állapotok alternatív kezelésére.</p>
@@ -107,8 +119,8 @@
               </a>
             </div>
           </div>
+
           <div class="col d-flex align-items-start">
-            <img class="feature-icon" src="public/images/icon_headmassage_tr.png" alt="indian head massage logo" width="100px" height="100px"/>
             <div>
               <h3 class="fs-2 text-body-emphasis head-massage">Indiai fejmasszázs</h3>
               <p>Speciális lelki blokkoló technika, feloldja a lelki megakadást, szorongást, depressziót, gátakat, pánikbetegséget, az energiaáramlást segíti.</p>
@@ -118,8 +130,8 @@
               </a>
             </div>
           </div>
+
           <div class="col d-flex align-items-start">
-            <img class="feature-icon" src="public/images/icon_metamorf_tr.png" alt="metamorf logo" width="100px" height="100px"/>
             <div>
               <h3 class="fs-2 text-body-emphasis metamorf">Metamorf érintés</h3>
               <p>Nyugodtabb alvást, megnövekedett energiát és életerőt eredményezhet.</p>
@@ -129,6 +141,105 @@
               </a>
             </div>
           </div>
+
+          <div class="col d-flex align-items-start">
+            <div>
+              <h3 class="fs-2 text-body-emphasis shiatsu">Shiatsu masszázs</h3>
+              <p>Ebben a rohanó világban a shiatsu egy olyan természetes módszert kínál, amely segít újra kapcsolódni önmagunkkal és megtalálni a belső harmóniát.</p>
+              <a href="./shiatsu-masszazs.html" class="icon-link shiatsu">
+                Részletek
+                <i class="bi bi-chevron-right shiatsu"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="carouselTreatments" class="carousel slide my-3 d-xxl-none" data-bs-ride="carousel">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselTreatments" data-bs-slide-to="0" class="bg-palegreen active" aria-current="true" aria-label="Kronobiológia"></button>
+            <button type="button" data-bs-target="#carouselTreatments" data-bs-slide-to="1" class="bg-palegreen" aria-label="Bowen-kezelés"></button>
+            <button type="button" data-bs-target="#carouselTreatments" data-bs-slide-to="2" class="bg-palegreen" aria-label="Indiai fejmasszázs"></button>
+            <button type="button" data-bs-target="#carouselTreatments" data-bs-slide-to="3" class="bg-palegreen" aria-label="Metamorf érintés"></button>
+            <button type="button" data-bs-target="#carouselTreatments" data-bs-slide-to="4" class="bg-palegreen" aria-label="Shiatsu masszázs"></button>
+          </div>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="col-8 d-flex align-items-start align-self-center mx-auto">
+                <div>
+                  <h3 class="fs-2 text-body-emphasis chrono">Kronobiológia</h3>
+                  <p>Lehetőség nyílik az egyéni képességek fejlesztésére, a kapcsolatok harmonizálására és a tudatosabb életvitel kialakítására.</p>
+                  <a href="./kronobiologia.html" class="icon-link chrono">
+                    Részletek
+                    <i class="bi bi-chevron-right chrono"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="col-8 d-flex align-items-start mx-auto">
+                <div>
+                  <h3 class="fs-2 text-body-emphasis bowen">Bowen kezelés</h3>
+                  <p>Hát-, derék-, váll-, ízületi fájdalom, állkapocs probléma, emésztőrendszeri eltérések, neurológiai állapotok alternatív kezelésére.</p>
+                  <a href="./bowen-kezeles.html" class="icon-link bowen">
+                    Részletek
+                    <i class="bi bi-chevron-right bowen"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="col-8 d-flex align-items-start mx-auto">
+                <div>
+                  <h3 class="fs-2 text-body-emphasis head-massage">Indiai fejmasszázs</h3>
+                  <p>Speciális lelki blokkoló technika, feloldja a lelki megakadást, szorongást, depressziót, gátakat, pánikbetegséget, az energiaáramlást segíti.</p>
+                  <a href="./indiai-fejmasszazs.html" class="icon-link head-massage">
+                    Részletek
+                    <i class="bi bi-chevron-right head-massage"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="col-8 d-flex align-items-start mx-auto">
+                <div>
+                  <h3 class="fs-2 text-body-emphasis metamorf">Metamorf érintés</h3>
+                  <p>Nyugodtabb alvást, megnövekedett energiát és életerőt eredményezhet.</p>
+                  <a href="./metamorf-erintes.html" class="icon-link metamorf">
+                    Részletek
+                    <i class="bi bi-chevron-right metamorf"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="col-8 d-flex align-items-start mx-auto">
+                <div>
+                  <h3 class="fs-2 text-body-emphasis shiatsu">Shiatsu masszázs</h3>
+                  <p>Ebben a rohanó világban a shiatsu egy olyan természetes módszert kínál, amely segít újra kapcsolódni önmagunkkal és megtalálni a belső harmóniát.</p>
+                  <a href="./shiatsu-masszazs.html" class="icon-link shiatsu">
+                    Részletek
+                    <i class="bi bi-chevron-right shiatsu"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev mb-5" type="button" data-bs-target="#carouselTreatments" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"><i class="bi bi-chevron-compact-left palegreen h1"></i></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next mb-5" type="button" data-bs-target="#carouselTreatments" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"><i class="bi bi-chevron-compact-right palegreen h1"></i></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
 
