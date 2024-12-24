@@ -1,4 +1,5 @@
 :root {
+    --color-main: #EBEAD6;
     --color-bowen: #59B12C;
     --color-bowen-active: #438722;
     --color-bowen-hover: #4d9b27;
@@ -9,12 +10,20 @@
     --color-neutral: #004aad;
     --color-bg: #E6E5E5;
     --color-card: #ffffff;
+    
+    --color-palegreen: #6A876F;
+    --color-palegreen-active: #405242;
+    --color-palegreen-hover: #739679;
+    --color-sand: #F1EDDC;
+    --color-lightbrown: #947E4E;
+    --color-lightbrown-active: #74613A;
+    --color-lightbrown-hover: #AC925A;
 
     --header-height: 7.2rem;
 }
 
 html, body {
-    background-color: var(--color-bg);
+    background-color: var(--color-main);
     height: 100%;
     margin: 0;
 }
@@ -26,7 +35,7 @@ html, body {
   }
 
 .primary-color {
-    color:var(--color-bowen) !important;
+    color:var(--color-palegreen) !important;
 }
 
 .secondary-color {
@@ -39,6 +48,28 @@ html, body {
 
 .bg-neutral {
     background-color: var(--color-neutral) !important;
+    color: var(--color-card) !important;
+}
+
+.palegreen {
+    color: var(--color-palegreen) !important;
+}
+
+.bg-palegreen {
+    background-color: var(--color-palegreen) !important;
+    color: var(--color-card) !important;
+}
+
+.border-palegreen {
+    border-color: var(--color-palegreen);
+}
+
+.lightbrown {
+    color: var(--color-lightbrown) !important;
+}
+
+.bg-lightbrown {
+    background-color: var(--color-lightbrown) !important;
     color: var(--color-card) !important;
 }
 
@@ -144,7 +175,7 @@ a {
     font-family: "Quintessential", serif;
     font-weight: 400;
     font-style: normal;
-    color:var(--color-bowen) !important;
+    color:var(--color-palegreen) !important;
 }
 
 .hero .lead {
@@ -156,23 +187,23 @@ a {
 }
 
 .btn {
-    background-color: var(--color-bowen);
-    border-color: var(--color-bowen);
+    background-color: var(--color-palegreen);
+    border-color: var(--color-palegreen);
 }
 
 .btn:disabled {
-    background-color: var(--color-bowen);
-    border-color: var(--color-bowen);
+    background-color: var(--color-palegreen);
+    border-color: var(--color-palegreen);
 }
 
 .btn:active{
-    background-color: var(--color-bowen-active) !important;
-    border-color: var(--color-bowen-active) !important;
+    background-color: var(--color-palegreen-active) !important;
+    border-color: var(--color-palegreen-active) !important;
 }
 
 .btn:hover{
-    background-color: var(--color-bowen-hover);
-    border-color: var(--color-bowen-hover);
+    background-color: var(--color-palegreen-hover);
+    border-color: var(--color-palegreen-hover);
 }
 
 .container-wide {
@@ -209,13 +240,18 @@ a {
 }
 
 .nav-link {
-    color: var(--color-bowen) !important;
+    color: var(--color-palegreen) !important;
     font-size: 1rem;
     padding: 0.25rem 1rem;
 }
 
 .nav-link:hover {
-    background-color: var(--color-bowen) !important;
+    background-color: var(--color-palegreen) !important;
+    color: var(--color-card) !important;
+}
+
+.nav-link:active {
+    background-color: var(--color-palegreen-active) !important;
     color: var(--color-card) !important;
 }
 
@@ -224,9 +260,9 @@ a {
 }
 
 .menu-button, .menu-button:active, .menu-button:hover {
-    border-color: var(--color-bowen);
+    border-color: var(--color-palegreen);
     background-color: var(--color-card);
-    color: var(--color-bowen);
+    color: var(--color-palegreen);
 }
 
 .round-img {
@@ -258,7 +294,7 @@ a {
     justify-content: center;
 }
 
-.card-body .border-bowen, .card-body .border-head-massage, .card-body .border-metamorf {
+.card-body .border-bowen, .border-palegreen, .card-body .border-head-massage, .card-body .border-metamorf {
     opacity: 1;
     margin-top: 0;
     margin-bottom: 0;
@@ -273,7 +309,7 @@ a {
 }
 
 .contact-icon {
-    color: var(--color-bowen);
+    color: var(--color-palegreen);
     padding: 10px;
 }
 
