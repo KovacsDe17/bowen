@@ -1,12 +1,18 @@
 :root {
     --color-main: #EBEAD6;
+
     --color-bowen: #59B12C;
     --color-bowen-active: #438722;
     --color-bowen-hover: #4d9b27;
+
     --color-head-massage: #C82826;
+
     --color-metamorf-old: #ffd500;
     --color-metamorf-v2: #f5ba36;
     --color-metamorf: #f3b52d;
+
+    --color-shiatsu: #4A11BB;
+
     --color-neutral: #004aad;
     --color-bg: #E6E5E5;
     --color-card: #ffffff;
@@ -14,10 +20,12 @@
     --color-palegreen: #6A876F;
     --color-palegreen-active: #405242;
     --color-palegreen-hover: #739679;
+
     --color-sand: #F1EDDC;
-    --color-lightbrown: #947E4E;
-    --color-lightbrown-active: #74613A;
-    --color-lightbrown-hover: #AC925A;
+
+    --color-chrono: #988A5B;
+    --color-chrono-active: #665534;
+    --color-chrono-hover: #9E8F5F;
 
     --header-height: 7.2rem;
 }
@@ -64,13 +72,17 @@ html, body {
     border-color: var(--color-palegreen);
 }
 
-.lightbrown {
-    color: var(--color-lightbrown) !important;
+.chrono {
+    color: var(--color-chrono) !important;
 }
 
-.bg-lightbrown {
-    background-color: var(--color-lightbrown) !important;
+.bg-chrono {
+    background-color: var(--color-chrono) !important;
     color: var(--color-card) !important;
+}
+
+.border-chrono {
+    border-color: var(--color-chrono);
 }
 
 .bowen {
@@ -110,6 +122,19 @@ html, body {
 
 .border-metamorf {
     border-color: var(--color-metamorf);
+}
+
+.shiatsu {
+    color: var(--color-shiatsu) !important;
+}
+
+.bg-shiatsu {
+    background-color: var(--color-shiatsu) !important;
+    color: var(--color-card) !important;
+}
+
+.border-shiatsu {
+    border-color: var(--color-shiatsu);
 }
 
 a {
@@ -391,4 +416,21 @@ h2.pricing-card-title {
 
 .social-media {
     color: var(--color-neutral);
+}
+
+#carouselTreatments {
+    min-height: 250px;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-indicators {
+    bottom: 25px;
+    margin-bottom: 0;
 }
