@@ -452,4 +452,14 @@ h2.pricing-card-title {
         align-items: center;
         justify-content: center;
     }
+
+    #carouselTreatments {
+        min-height: 17rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #carouselTreatments {
+        min-height: 20rem;
+    }
 }
