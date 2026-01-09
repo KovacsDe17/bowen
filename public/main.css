@@ -12,6 +12,11 @@
     --color-metamorf: #f3b52d;
 
     --color-shiatsu: #4A11BB;
+    --color-quickhelp: #cd6d89;
+    --color-quickhelp-light: #f3e6ea;
+    --color-arrangement: #64690c;
+    --color-maintain: #74abcd;
+    --color-engrossment: #206b21;
 
     --color-neutral: #004aad;
     --color-bg: #E6E5E5;
@@ -135,6 +140,62 @@ html, body {
 
 .border-shiatsu {
     border-color: var(--color-shiatsu);
+}
+
+.quickhelp {
+    color: var(--color-quickhelp);
+}
+
+.bg-quickhelp {
+    background-color: var(--color-quickhelp) !important;
+    color: var(--color-card) !important;
+}
+
+.bg-quickhelp-light {
+    background-color: var(--color-quickhelp-light) !important;
+}
+
+.border-quickhelp {
+    border-color: var(--color-quickhelp) !important;
+}
+
+.arrangement {
+    color: var(--color-arrangement);
+}
+
+.bg-arrangement {
+    background-color: var(--color-arrangement) !important;
+    color: var(--color-card) !important;
+}
+
+.border-arrangement {
+    border-color: var(--color-arrangement);
+}
+
+.maintain {
+    color: var(--color-maintain);
+}
+
+.bg-maintain {
+    background-color: var(--color-maintain) !important;
+    color: var(--color-card) !important;
+}
+
+.border-maintain {
+    border-color: var(--color-maintain);
+}
+
+.engrossment {
+    color: var(--color-engrossment);
+}
+
+.bg-engrossment {
+    background-color: var(--color-engrossment) !important;
+    color: var(--color-card) !important;
+}
+
+.border-engrossment {
+    border-color: var(--color-engrossment);
 }
 
 a {
@@ -319,7 +380,15 @@ a {
     justify-content: center;
 }
 
-.card-body .border-bowen, .border-palegreen, .card-body .border-head-massage, .card-body .border-metamorf, .border-shiatsu {
+.card-body .border-bowen, 
+.card-body .border-palegreen,
+.card-body .border-head-massage,
+.card-body .border-metamorf,
+.card-body .border-shiatsu, 
+.card-body .border-quickhelp,
+.card-body .border-arrangement,
+.card-body .border-maintain,
+.card-body .border-engrossment {
     opacity: 1;
     margin-top: 0;
     margin-bottom: 0;
@@ -440,6 +509,14 @@ h2.pricing-card-title {
     height: 64px;
 }
 
+.vr {
+    width: 1px !important;
+}
+
+.bundle-hr {
+    width: 100%;
+}
+
 @media only screen and (max-width: 400px) {
     .header-image{
         width: 36px;
@@ -462,4 +539,52 @@ h2.pricing-card-title {
     #carouselTreatments {
         min-height: 20rem;
     }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .border-bundle-prices{
+        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)
+    }
+    .border-bundle-2{
+        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .border-bundle-prices{
+        border-right: none
+    }
+    .border-bundle-2{
+        border-right: none
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .border-bundle-prices{
+        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)
+    }
+    .border-bundle-2{
+        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .bundle-prices {
+        width: 100%;
+        white-space: nowrap;
+    }
+    .border-bundle-prices{
+        border-right: none
+    }
+    .border-bundle-1{
+        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
