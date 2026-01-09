@@ -15,8 +15,11 @@
     --color-quickhelp: #cd6d89;
     --color-quickhelp-light: #f3e6ea;
     --color-arrangement: #64690c;
+    --color-arrangement-light: #dbdea6;
     --color-maintain: #74abcd;
+    --color-maintain-light: #d2dadf;
     --color-engrossment: #206b21;
+    --color-engrossment-light: #c5e2d1;
 
     --color-neutral: #004aad;
     --color-bg: #E6E5E5;
@@ -168,6 +171,10 @@ html, body {
     color: var(--color-card) !important;
 }
 
+.bg-arrangement-light {
+    background-color: var(--color-arrangement-light) !important;
+}
+
 .border-arrangement {
     border-color: var(--color-arrangement);
 }
@@ -181,6 +188,10 @@ html, body {
     color: var(--color-card) !important;
 }
 
+.bg-maintain-light {
+    background-color: var(--color-maintain-light) !important;
+}
+
 .border-maintain {
     border-color: var(--color-maintain);
 }
@@ -192,6 +203,10 @@ html, body {
 .bg-engrossment {
     background-color: var(--color-engrossment) !important;
     color: var(--color-card) !important;
+}
+
+.bg-engrossment-light {
+    background-color: var(--color-engrossment-light) !important;
 }
 
 .border-engrossment {
@@ -544,10 +559,10 @@ h2.pricing-card-title {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .border-bundle-prices{
-        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)
+        border-right: var(--bs-border-width) var(--bs-border-style)
     }
     .border-bundle-2{
-        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)
+        border-right: var(--bs-border-width) var(--bs-border-style)
     }
 }
 
@@ -564,10 +579,10 @@ h2.pricing-card-title {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .border-bundle-prices{
-        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)
+        border-right: var(--bs-border-width) var(--bs-border-style)
     }
     .border-bundle-2{
-        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)
+        border-right: var(--bs-border-width) var(--bs-border-style)
     }
 }
 
@@ -581,7 +596,7 @@ h2.pricing-card-title {
         border-right: none
     }
     .border-bundle-1{
-        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)
+        border-right: var(--bs-border-width) var(--bs-border-style)
     }
 }
 
