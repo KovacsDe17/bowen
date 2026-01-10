@@ -176,7 +176,7 @@ html, body {
 }
 
 .border-arrangement {
-    border-color: var(--color-arrangement);
+    border-color: var(--color-arrangement) !important;
 }
 
 .maintain {
@@ -193,7 +193,7 @@ html, body {
 }
 
 .border-maintain {
-    border-color: var(--color-maintain);
+    border-color: var(--color-maintain) !important;
 }
 
 .engrossment {
@@ -210,7 +210,7 @@ html, body {
 }
 
 .border-engrossment {
-    border-color: var(--color-engrossment);
+    border-color: var(--color-engrossment) !important;
 }
 
 a {
@@ -485,7 +485,6 @@ a {
 .pricing-card-details {
     display: flex;
     flex-grow: 1;
-    flex-direction: column;
     min-height: 3.5rem;
 }
 
@@ -532,6 +531,10 @@ h2.pricing-card-title {
     width: 100%;
 }
 
+.bundle-desc {
+    width: 100% !important;
+}
+
 @media only screen and (max-width: 400px) {
     .header-image{
         width: 36px;
@@ -564,6 +567,9 @@ h2.pricing-card-title {
     .border-bundle-2{
         border-right: var(--bs-border-width) var(--bs-border-style)
     }
+    .border-bundle-3{
+        border-right: var(--bs-border-width) var(--bs-border-style)
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -574,6 +580,9 @@ h2.pricing-card-title {
     .border-bundle-2{
         border-right: none
     }
+    .border-bundle-3{
+        border-right: none
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -582,6 +591,9 @@ h2.pricing-card-title {
         border-right: var(--bs-border-width) var(--bs-border-style)
     }
     .border-bundle-2{
+        border-right: var(--bs-border-width) var(--bs-border-style)
+    }
+    .border-bundle-3{
         border-right: var(--bs-border-width) var(--bs-border-style)
     }
 }
@@ -598,6 +610,13 @@ h2.pricing-card-title {
     .border-bundle-1{
         border-right: var(--bs-border-width) var(--bs-border-style)
     }
+    .border-bundle-3{
+        border-right: none
+    }
+    .border-bundle-4{
+        border-right: var(--bs-border-width) var(--bs-border-style)
+    }
+    
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
